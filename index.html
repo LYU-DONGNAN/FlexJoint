@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexJoint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            width:1440px;
+            height:100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(244, 255, 255);
+            color:rgb(215, 253, 253);
+        }
+
+        .content {
+            text-align: center;
+            width: 90%; /* Increased width for the content */
+            max-width: 1200px;
+            background-color: rgb(224, 248, 248);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center; /* Vertically center text */
+            justify-content: space-between; /* Adjusted to take up more space */
+            margin-bottom: 30px;
+        }
+
+        .image-section {
+            flex: 1;
+            margin-right: 80px; /* Increased margin between image and text */
+        }
+
+        .image-section img {
+            width: 100%; /* Make the image take up the full section */
+            max-width: 600px;  /* Increased the image size */
+            height: auto;
+            border: 2px solid #000;
+        }
+
+        .text-section {
+            flex: 2; /* Let the text take more space horizontally */
+            text-align: center; /* Center-align the text */
+        }
+
+        .text-section h1 {
+            font-size: 80px;  /* Keep the large font size for FlexJoint */
+            font-weight: bold;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .text-section p {
+            font-size: 48px;  /* Keep the large font size for Chinese subtitle */
+            color: #555;
+            margin-top: 10px;
+            font-family: 'Brush Script MT', cursive;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .buttons button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <br>
+        <!-- Top section with image and text side by side -->
+        <div class="top-section">
+            <div class="image-section">
+                <img src="image.png" alt="FlexJoint Image">
+            </div>
+            <div class="text-section">
+                <h1>FlexJoint</h1>
+                <p>膝关节韧带群植点中心定位系统</p>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- Buttons below the top section -->
+        <div class="buttons">
+            <button>选择图像文件</button>
+            <button>执行韧带分割</button>
+            <button>三维模型重构</button>
+            <button>植点定位分析</button>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+
+</body>
+</html>
